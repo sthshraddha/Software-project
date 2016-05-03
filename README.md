@@ -99,8 +99,6 @@ This function ties up the above four functions and tells the program which funct
 
 ## Output example:
 ```
-[Anaconda3] C:\Users\Shraddha\Desktop>python vaccinetracker.py -birthdate 2016,3,20
-
 Current age of the child is:
 1.47 months
 
