@@ -47,11 +47,10 @@ This function calls the user's input and calculates the current age of child in 
 **Function 3:** _quotes_
 ```
 def quotes():
-    quote = ["I may not be perfect, but when I look at my children I know that \
-I got something in my life perfectly right.",
-"In the eyes of a child, you will see the world as it should be.",
-_...truncated_**
-]
+    quote = ["I may not be perfect, but when I look at my children I know that I got something in my life perfectly right.",
+            "In the eyes of a child, you will see the world as it should be.",
+            **...truncated
+            ]
     print("\nQuote of the day: " + random.choice(quote))
 ```
 This function shuffles the listed quotes and prints out a different quote when run at different times. The user can add as many quotes as he/she wants.
@@ -85,7 +84,7 @@ def main():
         {'vaccination':'Hepatitis B, Dose 1 of 3',
         'milestone': 'Recognizes caregivers voice, communicates through body language (crying or fussing)',
         'applicable':(lambda age:age<1)},
-        _...truncated_**
+        **...truncated
     vaccines_and_milestones(age, vaccinations)
     quotes()
 
