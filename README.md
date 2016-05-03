@@ -6,7 +6,7 @@ This is a Python based program that helps parents get a quick list of vaccinatio
 ## Structure of the program:
 The program has five separate functions. They are as following:
 **Function 1:** _argparse_
-'''
+```
 def parser():
     parser = argparse.ArgumentParser(description='takes date of birth of a \
     child and lists the vaccinations required and major developmental \
@@ -19,6 +19,6 @@ def parser():
             )
     args = parser.parse_args()
     return args
-'''
+```
 
 
