@@ -22,7 +22,7 @@ def parser():
 ```
 This function enables the user to enter his/her child's date of birth so that the input information can be passed on to the second function.
 
-**Function 2:" *calculating_current_age*
+**Function 2:** *calculating_current_age*
 ```
 def calculating_current_age(birthdate):
     current_date = datetime.datetime.now()
