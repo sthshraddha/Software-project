@@ -5,7 +5,7 @@ This is a Python based program that helps parents get a quick list of vaccinatio
 
 ## Structure of the program:
 The program has five separate functions. They are as following:
-**Function 1:** _argparse_
+**Function 1:** _parser_
 ```
 def parser():
     parser = argparse.ArgumentParser(description='takes date of birth of a \
@@ -20,7 +20,18 @@ def parser():
     args = parser.parse_args()
     return args
 ```
+This function enables the user to enter his/her child's date of birth so that the input information can be passed on to the second function.
 
-This function will ask for the 
+**Function 2:" *calculating_current_age*
+```
+def calculating_current_age(birthdate):
+    current_date = datetime.datetime.now()
+    # print(date1)
+    child_birthdate = birthdate
+    age_in_days = abs(current_date - child_birthdate).days
+    age_in_months = age_in_days/30
+    return age_in_months
+```
+This function calls the user's input and calculates the current age of child in months.
 
 
