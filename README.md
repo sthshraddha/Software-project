@@ -6,5 +6,19 @@ This is a Python based program that helps parents get a quick list of vaccinatio
 ## Structure of the program:
 The program has five separate functions. They are as following:
 **Function 1:** _argparse_
+'''
+def parser():
+    parser = argparse.ArgumentParser(description='takes date of birth of a \
+    child and lists the vaccinations required and major developmental \
+    milestones for that particular age range according to CDC website.')
+    parser.add_argument(
+            "--birthdate",
+            required=True,
+            type=str,
+            help="""entering format: --birthdate 2014,3,21"""
+            )
+    args = parser.parse_args()
+    return args
+'''
 
 
