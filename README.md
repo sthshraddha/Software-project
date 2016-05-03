@@ -21,9 +21,7 @@ The program has five separate functions. They are as following:
 **Function 1:** _parser_
 ```
 def parser():
-    parser = argparse.ArgumentParser(description='takes date of birth of a \
-    child and lists the vaccinations required and major developmental \
-    milestones for that particular age range according to CDC website.')
+    parser = argparse.ArgumentParser(description='takes date of birth of a child and lists the vaccinations required and major developmental milestones for that particular age range according to CDC website.')
     parser.add_argument(
             "-birthdate",
             required=True,
@@ -39,7 +37,6 @@ This function enables the user to enter his/her child's date of birth so that th
 ```
 def calculating_current_age(birthdate):
     current_date = datetime.datetime.now()
-    # print(date1)
     child_birthdate = birthdate
     age_in_days = abs(current_date - child_birthdate).days
     age_in_months = age_in_days/30
@@ -53,21 +50,7 @@ def quotes():
     quote = ["I may not be perfect, but when I look at my children I know that \
 I got something in my life perfectly right.",
 "In the eyes of a child, you will see the world as it should be.",
-"The best toys a child can have is a parent who gets down on the floor and \
-plays with them.",
-"Happiness is...laughing with a toddler about something entirely nonsensical.",
-"Happiness is...getting a kiss and a hug from a child.",
-"Hakuna matata!",
-"The littlest feet make the biggest footprints in our hearts.",
-"People who say they sleep like a baby usually don't have one.",
-"A baby makes love stronger, the days shorter, the nights longer, savings \
-smaller, and a home happier.",
-"Your first breath took ours away.",
-"Children are heaven sent: A gift of love from up above.",
-"Best things in life really do come in small tiny, cute packages.",
-"Happiness is...hearing your baby fart.",
-"When my baby is sleeping that is when I think...Wow! I made that.",
-"Whatever you are, a good one."
+_...truncated_**
 ]
     print("\nQuote of the day: " + random.choice(quote))
 ```
@@ -81,13 +64,9 @@ def vaccines_and_milestones(age, vaccinations):
     for vaccination in vaccinations:
         if vaccination['applicable'](age):
             print("\nRequired shots for your baby: " + vaccination['vaccination'])
-            print("\nThese vaccines will protect your child from: pneumonia, \
-measles, mumps, rubella, chickenpox, Hepatitis A and B viruses (inflammation \
-of liver), polio, diphtheria, tetanus, whooping cough (pertusis), meningitis, \
-genital warts, cervical cancer, diarrhea and vomitting.")
+            print("\nThese vaccines will protect your child from: pneumonia, measles, mumps, rubella, chickenpox, Hepatitis A and B viruses (inflammation of liver), polio, diphtheria, tetanus, whooping cough (pertusis), meningitis, genital warts, cervical cancer, diarrhea and vomitting.")
             print("\nDevelopmetal milestones according to CDC: " + vaccination['milestone'])
-            print("\nPlease note that developmental milestones can vary from \
-one child to the other. Let them grow at their own pace.")
+            print("\nPlease note that developmental milestones can vary from one child to the other. Let them grow at their own pace.")
             no_vaccinations_applicable = False
     if no_vaccinations_applicable:
         print("\nYAY! No shots until next visit! Weehooo!!!")
@@ -104,8 +83,7 @@ def main():
     print("%0.2f" %age + " " + "months" )
     vaccinations = [
         {'vaccination':'Hepatitis B, Dose 1 of 3',
-        'milestone': 'Recognizes caregivers voice, communicates through body \
-language (crying or fussing)',
+        'milestone': 'Recognizes caregivers voice, communicates through body language (crying or fussing)',
         'applicable':(lambda age:age<1)},
         _...truncated_**
     vaccines_and_milestones(age, vaccinations)
