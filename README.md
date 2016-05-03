@@ -12,7 +12,7 @@ def parser():
     child and lists the vaccinations required and major developmental \
     milestones for that particular age range according to CDC website.')
     parser.add_argument(
-            "--birthdate",
+            "-birthdate",
             required=True,
             type=str,
             help="""entering format: --birthdate 2014,3,21"""
@@ -20,5 +20,7 @@ def parser():
     args = parser.parse_args()
     return args
 ```
+
+This function will ask for the 
 
 
