@@ -67,7 +67,7 @@ def vaccines_and_milestones(age, vaccinations):
             print("\nRecommended shots for your child: " + vaccination['vaccination'])
             print("\nThe vaccines will protect your child from: pneumonia, measles, mumps, rubella, chickenpox, Hepatitis A and B viruses (inflammation of liver), polio, diphtheria, tetanus, whooping cough (pertusis), meningitis, genital warts, cervical cancer, diarrhea and vomitting.")
             print("\nDevelopmetal milestones according to CDC: " + vaccination['milestone'])
-            print("\nDevelopmental milestones can vary from one child to the other.")
+            print("\nPlease note that the developmental milestones can vary from one child to the other.")
             no_vaccinations_applicable = False
     if no_vaccinations_applicable:
         print("\nYAY! No shots until next visit.")
