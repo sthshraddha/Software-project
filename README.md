@@ -4,7 +4,7 @@
 This is a Python based program that helps parents get a quick list of vaccinations needed for their children until 18 years of age. It also lists the milestones for children under 6 years of age. When the user runs this program, it will ask for child's date of birth and based on the user's input, it will calculate child's current age. It will then list the aforementioned information according to Center for Disease and Control (CDC) website. Additionally, it will also print a friendly note to parents reminding them to let their kids grow and develop at their own pace and a "Quote of the day".
 
 ## Usage:
-_For Windows OS users:**
+**For Windows OS users:
 There are few things to do prior to running this program. They are:
 ##### 1. Download Python version 3.5.1 or above for Windows OS.
 ##### 2. Download Anaconda <https://www.continuum.io/downloads> 
