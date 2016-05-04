@@ -9,8 +9,7 @@ There are few things to do prior to running this program. They are:
 ##### 1. Download Python version 3.5.1 for Windows OS <https://www.python.org/downloads/>
 ##### 2. Download Anaconda <https://www.continuum.io/downloads> 
 After downloading these two programs, the user can download vaccinetracker.py in a specified folder. To run the program, the user needs to go that folder and type the following command: 
-**_Notice the format of date of birthdate of the child_**
-For example:
+For example: (**_Notice the format of date of birthdate of the child_**)
 ```
 [Anaconda3] C:\Users\Shraddha>cd Desktop
 
