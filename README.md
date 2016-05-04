@@ -64,7 +64,7 @@ def vaccines_and_milestones(age, vaccinations):
     no_vaccinations_applicable = True
     for vaccination in vaccinations:
         if vaccination['applicable'](age):
-            print("\nRequired shots for your baby: " + vaccination['vaccination'])
+            print("\nRecommended shots for your child: " + vaccination['vaccination'])
             print("\nThese vaccines will protect your child from: pneumonia, measles, mumps, rubella, chickenpox, Hepatitis A and B viruses (inflammation of liver), polio, diphtheria, tetanus, whooping cough (pertusis), meningitis, genital warts, cervical cancer, diarrhea and vomitting.")
             print("\nDevelopmetal milestones according to CDC: " + vaccination['milestone'])
             print("\nPlease note that developmental milestones can vary from one child to the other. Let them grow at their own pace.")
