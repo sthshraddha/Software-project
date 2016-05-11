@@ -72,7 +72,7 @@ def vaccines_and_milestones(age, vaccinations):
     if no_vaccinations_applicable:
         print("\nYAY! No shots until next visit.")
 ```
-This function loops through the vaccine and milestone list according to the age of the child and then checks whether vaccination/s is/are required for current age or not. If no vaccine is required then the program will inform the user that no vaccine is required.
+This function loops through the vaccine and milestone list according to the age of child and then checks whether vaccination/s is/are required for current age or not. If no vaccine is required then the program will inform user that no vaccine is required.
 
 **Function 5:** *main*
 ```
